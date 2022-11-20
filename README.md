@@ -1,17 +1,25 @@
-# SQL_CoderHouse
-Creacion de una base de datos en MySQL para la empresa Weskan
+# WESKAN DB
+## Introduccion
+Creacion de una base de datos (DB) en MySQL para la administracion/gestion de los pedidos internos de la empresa [Weskan](http://www.weskan.com.ar/).
 
-## Desafio 1: Descripcion de tablas
-*Aspectos a incluir:*
-1. Definir las tablas del proyecto
-1. Incluir una descripción de cada tabla
-1. Deben incluir los campos que las componen, detallando:
-  1. claves primarias
-  1. claves foráneas
-  1. campos abreviados
-  1. nombre del campo completo
-  1. tipos de datos de cada campo
+## Descripcion
+<img src="/Diagrama_EER.png" alt="Alt text" title="Optional title">
 
+La DB contiene:
+> **Tabla de hecho** <br>
+&emsp; pedidos <br>
+> **Tablas relacionales** <br>
+&emsp; productos<br>
+&emsp; clientes<br>
+&emsp; aplicaciones<br>
+&emsp; materias_primas
+ 
+## Requerimientos
+Tener instalado la plataforma de [MySQL](https://www.mysql.com/)
 
+- Guia de instalacion MySQL en [Windows](https://docs.google.com/document/d/1BZ5IdNg4BjlBlgcsaTCN2hkYTc4lN9rsm5gOlyFT3ko/edit)
+- Guia de instalacion MySQL en [MAC](https://docs.google.com/document/d/1BZ5IdNg4BjlBlgcsaTCN2hkYTc4lN9rsm5gOlyFT3ko/edit)
 
-
+## Scripts
+### DDL
+### DML
