@@ -21,5 +21,5 @@ Tener instalado la plataforma de [MySQL](https://www.mysql.com/)
 - Guia de instalacion MySQL en [MAC](https://docs.google.com/document/d/1BZ5IdNg4BjlBlgcsaTCN2hkYTc4lN9rsm5gOlyFT3ko/edit)
 
 ## Scripts
-### DDL
-### DML
+### [DDL](/DDL.sql)
+### [DML](/DML.sql)
