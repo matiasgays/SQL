@@ -27,7 +27,8 @@ Tener instalado la plataforma de [MySQL](https://www.mysql.com/)
 
 ## Pasos a seguir:
 
-1. Ejecutar script DDL_1
-2. Importar los datos de las respectivas tablas (la tabla pedidos se carga en una tabla intermedia stg_pedidos)
-3. Ejecutar script DDL_2
-4. Ejecutar script VISTAS
+1. Ejecutar DDL_1
+2. Importar datos ubicados en la carpeat "Importaciones"
+3. Ejecutar DDL_2
+4. Ejecutar VISTAS
+5. Ejecutar FUNCIONES
