@@ -3,7 +3,7 @@
 Creacion de una base de datos (DB) en MySQL para la administracion/gestion de los pedidos internos de la empresa [Weskan](http://www.weskan.com.ar/).
 
 ## Descripcion
-<img src="/Diagrama_EER.png" alt="Alt text" title="Optional title">
+<img src="/Diagramas/Diagrama_EER.png" alt="Alt text" title="Optional title">
 
 La DB contiene:
 > **Tabla de hecho** <br>
