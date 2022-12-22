@@ -27,6 +27,4 @@ begin
     select * from pedidos where cliente = p_cliente;
 end //
 
--- alter table pedidos modify id int not null auto_increment;
 call sp_insert_pedido('godoy','AV 1001',302);
-

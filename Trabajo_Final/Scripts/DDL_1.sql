@@ -39,7 +39,7 @@ drop table if exists stg_pedidos;
 create table stg_pedidos (
 	id int not null auto_increment primary key,
     cliente varchar(250) not null,
-    codigo varchar(25) not null,
+    codigo varchar(250) not null,
     cantidad varchar(250) not null,
     fecha_ingreso varchar(250) not null,
     fecha_objetivo varchar(250) null

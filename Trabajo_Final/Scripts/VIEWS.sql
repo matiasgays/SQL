@@ -4,22 +4,22 @@ use weskan;
 drop view if exists vw_pedidos_mercado_interno;
 create view vw_pedidos_mercado_interno 
 as (
-select p.cliente, p.codigo, p.cantidad, cl.mercado
-from pedidos p 
-join clientes cl
-	on p.cliente = cl.razon_social
-where cl.mercado = 'interno'
-order by p.cliente
+	select p.cliente, p.codigo, p.cantidad, cl.mercado
+	from pedidos p 
+	join clientes cl
+		on p.cliente = cl.razon_social
+	where cl.mercado = 'interno'
+	order by p.cliente
 );
 select * from vw_pedidos_mercado_interno;
 
 -- PEDIDOS CON FECHA OBJETIVO MENOR A LA FECHA ACTUAL
 drop view if exists vw_pedidos_pendientes;
 create view vw_pedidos_pendientes as (
-	select cliente, codigo, cantidad, date_format(fecha_objetivo,'%d/%m/%Y')
+	select cliente, codigo, cantidad, date_format(fecha_objetivo,'%d/%m/%Y') as fecha_objetivo
     from pedidos
     where fecha_objetivo < curdate()
-    order by fecha_objetivo
+    order by fecha_objetivo desc
 );
 select * from vw_pedidos_pendientes;
 
@@ -33,6 +33,7 @@ create view vw_pedidos_diam_int_menor_20 as (
     join materias_primas m 
 		on prod.materia_prima = m.codigo
     where m.diam_interior < 20
+    order by prod.diam_interior
 );
 select * from vw_pedidos_diam_int_menor_20;
 
@@ -62,4 +63,3 @@ create view vw_pedidos_fiat as (
 );
 
 select * from vw_pedidos_fiat;
-

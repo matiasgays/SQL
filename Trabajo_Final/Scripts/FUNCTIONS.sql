@@ -1,17 +1,18 @@
 use weskan;
 
 -- FUNCION QUE TRAE EL MERCADO DEL RESPECTIVO CLIENTE
-drop function if exists fn_pedidos_auto;
+drop function if exists fn_mercado_cliente;
 delimiter //
-create function fn_pedidos_auto(nombre varchar(50))
+create function fn_mercado_cliente(nombre varchar(50))
 returns varchar(10)
 deterministic
 begin
-	return (select mercado from clientes where razon_social = nombre );
+	return (select mercado from clientes where razon_social = nombre);
 end // 
 
-select p.cliente, p.codigo, p.cantidad, fn_pedidos_auto(p.cliente) as mercado
-from pedidos p;
+select p.cliente, p.codigo, p.cantidad, fn_mercado_cliente(p.cliente) as mercado
+from pedidos p
+order by p.cliente;
 
 -- FUNCION QUE CONCATENA LAS DIMENSIONES(DIAMETROS Y LARGO) DE LOS CODIGOS
 drop function if exists fn_dimensiones;
@@ -30,4 +31,5 @@ begin
 end//
 
 select p.cliente, p.codigo, p.cantidad, fn_dimensiones(p.codigo) as dimensiones
-from pedidos p;
+from pedidos p
+order by p.codigo;

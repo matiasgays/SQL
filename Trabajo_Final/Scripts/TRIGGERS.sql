@@ -1,8 +1,5 @@
 use weskan;
 
-select * from pedidos;
-select * from productos;
-
 -- TABLA LOG DE PEDIDOS
 drop table if exists log_pedidos;
 create table log_pedidos (
@@ -30,7 +27,7 @@ begin
 end//
 
 insert into pedidos(cliente,codigo,cantidad,fecha_ingreso,fecha_objetivo)
-values ('vazquez luciano','AV 4330',300,current_date(),current_date()+10);
+values ('vazquez luciano','AV 4330',300,current_date(),current_date()+1);
 select * from log_pedidos;
 
 -- TRIGER ACTUALIZACION PEDIDO
@@ -61,7 +58,8 @@ begin
 end//
 
 delete from pedidos
-where id in (select max(id) from pedidos);
+order by id desc
+limit 1;
 select * from log_pedidos;
 
 -- TABLA LOG DE PRODUCTOS
