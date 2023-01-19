@@ -1,7 +1,9 @@
 # WESKAN DB
+
+Creacion de una base de datos para la administracion/gestion de los pedidos internos de la empresa [Weskan](https://weskan.online/).
 ## Introduccion
 
-Desarrollo de una base de datos en SQL bajo el entrono de ejecucion MySQL
+Desarrollo de una base de datos en SQL bajo el entrono de ejecucion MySQL (ver diagrama ![EER](./Trabajo_Final/Diagrama_EER/Diagrama_ER.png?raw=true))
 
 ## Requerimientos
 Tener instalado la plataforma de [MySQL](https://www.mysql.com/)
@@ -12,8 +14,12 @@ Tener instalado la plataforma de [MySQL](https://www.mysql.com/)
 ## Descripcion
 En el repositorio se adjuntan dos carpetas:
 
-1. Ejercicos : contiene ejercicios de ddl, dml, funciones, stored procedures y funciones
+1. Ejercicos : contiene ejercicios desarrollados en el curso (ddl, dml, dcl, tcl, funciones y stored procedures)
 
-1. Trabajo Final: scripts de la creacion de una base de datos para la administracion/gestion de los pedidos internos de la empresa [Weskan](https://weskan.online/). (Ver diagrama [EER](./Trabajo_Final/Diagrama_EER/EER.png))
+1. Trabajo Final:
+    -   Backup: carpeta con copias de seguridad de la base de datos
+    -   Diagrama_EER: carpeta con los diagramas entidad-relacion en diversos formatos (.svg, .png, .mwb)
+    -   Scripts: carpeta con los archivos necesarios para la ejecucion del proyecto final *(los pasos a seguir para la correcta ejecucion del mismo estan detallados en el README.md dentro de dicha carpeta)*
+    -   TPFinal_SQL.pdf: archivo PDF del informe del proyecto
 
-Los pasos a seguir para la correcta ejecucion del Trabajo Final se encuentran en el README.md dentro de la carpeta Scripts
+
