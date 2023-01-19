@@ -18,9 +18,9 @@ En el repositorio se adjuntan dos carpetas:
 1. Ejercicos : contiene ejercicios desarrollados en el curso (ddl, dml, dcl, tcl, funciones y stored procedures)
 
 1. Trabajo Final:
-    *   Backup: carpeta con copias de seguridad de la base de datos
-    *   Diagrama_EER: carpeta con los diagramas entidad-relacion en diversos formatos (.svg, .png, .mwb)
-    *   Scripts: carpeta con los archivos necesarios para la ejecucion del proyecto final *(los pasos a seguir para la correcta ejecucion del mismo estan detallados en el README.md dentro de dicha carpeta)*
-    *   TPFinal_SQL.pdf: archivo PDF del informe del proyecto
+    - Backup: carpeta con copias de seguridad de la base de datos
+    - Diagrama_EER: carpeta con los diagramas entidad-relacion en diversos formatos (.svg, .png, .mwb)
+    - Scripts: carpeta con los archivos necesarios para la ejecucion del proyecto final *(los pasos a seguir para la correcta ejecucion del mismo estan detallados en el README.md dentro de dicha carpeta)*
+    - TPFinal_SQL.pdf: archivo PDF del informe del proyecto
 
 
