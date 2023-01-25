@@ -23,4 +23,6 @@ En el repositorio se adjuntan dos carpetas:
 - Scripts: carpeta con los archivos necesarios para la ejecucion del proyecto final *(los pasos a seguir para la correcta ejecucion del mismo estan detallados en el README.md dentro de dicha carpeta)*
 - TPFinal_SQL.pdf: archivo PDF del informe del proyecto
 
+## Built With
 
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white)&nbsp;
